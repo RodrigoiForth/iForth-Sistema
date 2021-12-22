@@ -26,6 +26,9 @@ nav {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   background: #23232e;
   height: 8vh;
+  width: 100%;
+  position:fixed;
+  z-index: 1;
 }
 
 main {

@@ -5,66 +5,200 @@ body{
 main{
     padding-top:92px ;
     max-width: 98%;
-    background: cover;
     margin: 0 auto;
-    background-color: burlywood;
     font-family: 'Montserrat', sans-serif;
 }
 h1{
-    text-align: center;
+    text-align: justify;
     font-weight: bold;
     font-size: 48px;
+    text-indent: 15px; 
 }
 
 .paragrafo {
-    text-align: center;
+    text-align: justify;
     font-size: 20px;
     line-height: 28px;
     justify-content: center;
     text-indent: 15px;  
+    width: 600px;
+    padding-bottom: 50px;
 }
 
 .container{
-    margin: 0 auto;
+    margin-bottom: 50px ;
     width: 600px;
+    display: inline-block;  
+}
+.flex{
+    display: flex;
     
 }
 
 .containerMV{
     margin: 0 auto;
     display: flex;
-    text-align: center;
+    text-align: justify;
+    flex-wrap: wrap;
     font-size: 20px;
     line-height: 28px;
-    justify-content: center;
     text-indent: 15px;
-    justify-content: space-around;
-    
+    flex-direction: column;
+    width: 100%;
+ 
 }
+.img-computador-text{
+    display: flex;
+
+}
+
 .containerh2{
     max-width: 300px;
     padding-top: 10px;
+    margin-bottom:50px;
 }
 .conteudo2{
     display: flex;
     flex-wrap: wrap;
     padding-top:75px ;
 }
+.carrossel{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+
 .img-computador img{
-    padding-top: 20px;
-   max-height: 550px;
+    width: 100%;
+
+   
 }
 
 .container2{
     margin: 5px auto;
     max-width: 300px;
 }
-.imagem ul{
-    padding-top: 300px;
-    display: flex;
-    justify-content: space-around;
+.imagem1{
+    width: 1000px;
+    height: 500px;
+    outline: 3px solid black;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 10px 15px black;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    
+    
 }
-.imagem ul img{
-    max-width: 400px;
+
+.imagem1 ul{
+    display: flex;
+    list-style: none;
+    width: 4000px ;
+    height: 500px;
+}
+
+.imagem1 ul img{
+    max-width: 1000px;
     max-height: 500px;
+}
+
+.imagem1 li{
+    position: relative;
+    animation: slide1 15s infinite ease-in-out;
+   
+}
+.imagem2{
+    width: 400px;
+    height: 800px;
+    outline: 3px solid black;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 10px 15px black;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    display: none;
+}
+.imagem2 ul{
+    display: flex;
+    list-style: none;
+    width: 48000px ;
+    height: 800px;
+}
+
+.imagem2 ul img{
+    max-width: 4800px;
+    max-height: 800px;
+}
+.imagem2 li{
+    position: relative;
+    animation: slide2 15s infinite ease-in-out;}
+
+.whatsapp{
+    color: black;
+    
+}
+
+.img-whatsapp{
+    max-width: 75px;
+    max-height: 75px;
+    
+}
+
+
+@keyframes slide1 {
+
+    0%{left: 0px}
+    20%{left:0px}
+
+    30%{left: -1000px}
+    40%{left: -1000px}
+
+    50%{left: -2000px}
+    60%{left: -2000px}
+
+    70%{left: -3000px}
+    80%{left: -3000px}
+
+    100%{left: 0px;}
+
+    
+}
+@keyframes slide2 {
+
+    0%{left: 0px}
+    10%{left:0px}
+
+    20%{left: -400px}
+    30%{left: -400px}
+
+    40%{left: -800px}
+    50%{left: -800px}
+
+    60%{left: -1200px}
+    70%{left: -1200px}
+
+    80%{left: -1600px}
+    90%{left: -1600px}
+
+    70%{left: -2000px}
+    80%{left: -2000px}
+
+    100%{left: 0px;}
+
+    
+}
+@media (max-width:600px){
+    .flex{
+        flex-wrap: wrap;
+        margin-left: 40px;
+    }
+
+    .imagem1{
+        display: none;
+    }
+    .imagem2{
+        display: block;
+    }
 }

@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="nav-bar/style.css" />
     <link rel="stylesheet" href="caracteres.css" />
     <link rel="stylesheet" href="carrossel.css" />
+    <link rel="stylesheet" href="whatsapp-link.css" />
   </head>
 
   <body>
     <header>
       <nav>
         <img src="iForth Logo/LogoBranco.png" alt="Logo da empresa" />
-        <a class="logo" href="/"> iForth Sistemas </a>
+        <a class="logo" href="/"></a>
         <div class="mobile-menu">
           <div class="line1"></div>
           <div class="line2"></div>
@@ -24,24 +25,24 @@
           <li><a href="#inicio">Início</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#projeto">Projetos</a></li>
+          <li><a href="#imagens">Imanges</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="fundo">
-        <div class="container">
-          <h1 class="tituloP">Quem somos</h1>
-          <p class="paragrafo">
-            Somos uma empresa brasileira, focada em oferecer soluções que possam
-            ajudar pessoas, gestores e empresas a alcançar seus objetivos.
-            Estender as possibilidades de sucesso de seus clientes na definição
-            e implantação das melhores soluções. Para isto disponibilizamos de
-            sistema e hardware que proporciona a visualização do processo
-            produtivo em tempo real gerando dados precisos para análise e tomada
-            de decisão.
-          </p>
-        </div>
+    <main id="sobre">
+        <h1 class="tituloP">Quem somos</h1>
+        <p class="paragrafo">
+          Somos uma empresa brasileira, focada em oferecer soluções que possam
+          ajudar pessoas, gestores e empresas a alcançar seus objetivos.
+          Estender as possibilidades de sucesso de seus clientes na definição e
+          implantação das melhores soluções. Para isto disponibilizamos de
+          sistema e hardware que proporciona a visualização do processo
+          produtivo em tempo real gerando dados precisos para análise e tomada
+          de decisão.
+        </p>
+      </div>
+      <div class="flex">
         <div class="containerMV">
           <div class="containerh2">
             <h2>MISSÃO</h2>
@@ -49,9 +50,6 @@
               Transformar conhecimento em solução de valor para a indústria
               cerâmica.
             </p>
-          </div>
-          <div class="img-computador">
-            <img src="accets/computadorpng.png" alt="Foto do Computador">
           </div>
           <div class="containerh2">
             <h2>VISÃO</h2>
@@ -61,8 +59,11 @@
             </p>
           </div>
         </div>
-      </div>
-      <div class="conteudo2">
+        <div class="img-computador">
+          <img src="accets/computadorpng.png" alt="Foto do Computador" />
+        </div>
+        </div>
+      <div class="conteudo2" id="projeto">
         <div class="container2">
           <h2>Módulo Produção</h2>
           <p>
@@ -99,21 +100,59 @@
           </p>
         </div>
       </div>
-      <div class="imagem">
-        <ul>
-          <li>
-            <img src="Imanges APP/imagens formatadas/webapp01.jpg" alt="" />
-          </li>
-          <li>
-            <img src="Imanges APP/imagens formatadas/webapp02.jpg" alt="" />
-          </li>
-          <li>
-            <img src="Imanges APP/imagens formatadas/webapp03.jpg" alt="" />
-          </li>
-          <li>
-            <img src="Imanges APP/imagens formatadas/webapp04.jpg" alt="" />
-          </li>
-        </ul>
+      <div>
+        <h2></h2>
+      </div>
+      <div class="carrossel" id="imagens">
+        <div class="imagem1">
+          <ul>
+            <li class="slide">
+              <img src="app-web-formatada/1.png" alt="" />
+            </li>
+            <li class="slide">
+              <img src="app-web-formatada/2.png" alt="" />
+            </li>
+            <li class="slide">
+              <img src="app-web-formatada/3.png" alt="" />
+            </li>
+            <li class="slide">
+              <img src="app-web-formatada/4.png" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="carrossel" id="imagens">
+        <div class="imagem2">
+          <ul>
+            <li class="slide">
+              <img src="app-web-mobile/1.jpg" alt="" />
+            </li>
+            <li class="slide">
+              <img src="app-web-mobile/2.jpg" alt="" />
+            </li>
+            <li class="slide">
+              <img src="app-web-mobile/3.jpg" alt="" />
+            </li>
+            <li class="slide">
+              <img src="app-web-mobile/4.jpg" alt="" />
+            </li>
+            <li class="slide">
+              <img src="app-web-mobile/5.jpg" alt="" />
+            </li>
+            <li class="slide">
+              <img src="app-web-mobile/6.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="whatsapp">
+        <a
+          class="whatsapp-link"
+          href="https://web.whatsapp.com/send?phone=+554899949727"
+          target="blank"
+        >
+          <img src="accets/webapp02.jpg" alt="" class="img-whatsapp" />
+        </a>
       </div>
     </main>
     <script src="nav-bar/mobile-navbar.js"></script>
