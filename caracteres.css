@@ -2,11 +2,15 @@
 body{
     height: 100vh;
 }
+html{
+    scroll-behavior: smooth;
+}
 main{
     padding-top:92px ;
     max-width: 98%;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
+    
 }
 h1{
     text-align: justify;
@@ -14,48 +18,64 @@ h1{
     font-size: 48px;
     text-indent: 15px; 
 }
+h2{
+    text-indent: 15px; 
+}
+.conteudo-p{
+    
+   display: flex;
+   vertical-align: top;
 
+}
 .paragrafo {
-    text-align: justify;
-    font-size: 20px;
+    text-align: start;
+    font-size: 15px;
     line-height: 28px;
-    justify-content: center;
-    text-indent: 15px;  
-    width: 600px;
-    padding-bottom: 50px;
+    width: 500px;
 }
 
-.container{
-    margin-bottom: 50px ;
-    width: 600px;
-    display: inline-block;  
-}
+
+
 .flex{
     display: flex;
-    
 }
 
 .containerMV{
     margin: 0 auto;
     display: flex;
-    text-align: justify;
     flex-wrap: wrap;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 28px;
-    text-indent: 15px;
-    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
- 
+    
+
+}
+.containerh2{
+    
+    width: 100%;
+    
+}
+
+.img-grande{
+    width: 400px;
+    height: 600px;
+    display: none;
+    
+}
+.img-pequena{
+    display: none;
 }
 .img-computador-text{
     display: flex;
 
 }
 
-.containerh2{
+.containerh2, h2{
     max-width: 300px;
-    padding-top: 10px;
-    margin-bottom:50px;
+    margin-top: 30px;
+
+    
 }
 .conteudo2{
     display: flex;
@@ -69,12 +89,22 @@ h1{
 }
 
 
-.img-computador img{
-    width: 100%;
 
-   
+.conteudo-texto, .containerMV{
+    width: 100%;
+    margin: 0 auto;
 }
 
+.img-computador img{
+    width: 600px;
+    
+    
+}
+.img-computador{
+    width: 100%;
+    margin: 0 auto;
+    margin-top:-255px;
+}
 .container2{
     margin: 5px auto;
     max-width: 300px;
@@ -136,13 +166,13 @@ h1{
     animation: slide2 15s infinite ease-in-out;}
 
 .whatsapp{
-    color: black;
+    
     
 }
 
 .img-whatsapp{
-    max-width: 75px;
-    max-height: 75px;
+    max-width: 80px;
+    max-height: 80px;
     
 }
 
@@ -182,17 +212,27 @@ h1{
     80%{left: -1600px}
     90%{left: -1600px}
 
-    70%{left: -2000px}
-    80%{left: -2000px}
-
     100%{left: 0px;}
 
     
 }
-@media (max-width:600px){
+
+.contato{
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+.contato li{
+    list-style: none;
+    text-decoration: none;
+    
+}
+.contato li a{
+    color: black;
+}
+@media (max-width:800px){
     .flex{
-        flex-wrap: wrap;
-        margin-left: 40px;
+        flex-wrap: wrap;       
     }
 
     .imagem1{
@@ -200,5 +240,44 @@ h1{
     }
     .imagem2{
         display: block;
+    }
+    .conteudo-texto{
+        width: 100%;
+        margin:0 auto;
+        
+    }
+
+    h1{
+        text-align: center;
+        margin-top: 3%;
+    }
+    .paragrafo{
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+    .containerMV{
+        width: 100%;
+        
+    }
+    .containerh2{
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .texto-mv{
+        width: 100%;
+        margin: 0 auto;;
+        
+    }
+    .div-texto-mw{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .img-computador img{
+        width: 100%;
+        margin: 0 auto}
+    .img-computador{
+       margin-top: 1px;
     }
 }
