@@ -38,7 +38,10 @@ scroll-container {
     text-align: start;
     font-size: 15px;
     line-height: 28px;
-    width: 500px;
+    width: 100%px;
+}
+.conteudo-texto{
+    max-width: 500px;
 }
 
 
@@ -103,7 +106,8 @@ scroll-container {
 }
 
 .img-computador img{
-    width: 600px;
+    width: 100%;
+    
     
     
 }
@@ -119,7 +123,6 @@ scroll-container {
 .imagem1{
     width: 1000px;
     height: 500px;
-    outline: 3px solid black;
     overflow: hidden;
     position: relative;
     box-shadow: 10px 10px 15px black;
@@ -149,7 +152,6 @@ scroll-container {
 .imagem2{
     width: 400px;
     height: 800px;
-    outline: 3px solid black;
     overflow: hidden;
     position: relative;
     box-shadow: 10px 10px 15px black;
@@ -255,7 +257,16 @@ footer p{
 }
 
 
-@media (max-width:1200px){
+@media (max-width:1007px){
+    
+    body{
+        width: 100%;
+    }
+
+    .conteudo-p{
+        width: 100%;
+        margin: 0 auto;
+    }
     .flex{
         flex-wrap: wrap;       
     }
@@ -268,8 +279,7 @@ footer p{
     }
     .conteudo-texto{
         width: 100%;
-        margin:0 auto;
-        
+        margin:0 auto;   
     }
 
     h1{
@@ -302,8 +312,14 @@ footer p{
     }
     .img-computador img{
         width: 100%;
-        margin: 0 auto}
-    .img-computador{
-       margin-top: 1px;
+        margin: 0 auto;  
+    }
+
+}
+
+@media (max-width:1000x){
+   p{
+        font-size: 45px ;
     }
 }
+
