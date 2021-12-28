@@ -1,24 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-body{
-    height: 100vh;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 main{
     padding-top:92px ;
-    max-width: 98%;
-    margin: 0 auto;
+    
+    
     font-family: 'Montserrat', sans-serif;
     
 }
+.inicio div{
+    background-image: url(../iForth-Sistema/app-web-formatada/1.png);
+}
 h1{
     text-align: justify;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 48px;
     text-indent: 15px; 
+    color: #425161;
+    margin-left: 75px;  
 }
-h2{
+.texto-mv h2{
     text-indent: 15px; 
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 36px;
+    color: #37484e;
+    margin-left: 75px;
 }
+
+h2{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+}
+
 scroll-container {
     display: block;
     width: 350px;
@@ -32,6 +47,7 @@ scroll-container {
     
    display: flex;
    vertical-align: top;
+   margin-left: 75px;
 
 }
 .paragrafo {
@@ -39,12 +55,22 @@ scroll-container {
     font-size: 15px;
     line-height: 28px;
     max-width: 500px;
+    
 }
 
 
 
 .flex{
     display: flex;
+}
+
+.container2 p{
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    font-style: normal;
+    color: #90a1b3;
+    
 }
 
 .containerMV{
@@ -56,12 +82,15 @@ scroll-container {
     justify-content: space-between;
     width: 100%;
     
+    
+   
+    
 
 }
 .containerh2{
     
     width: 100%;
-    
+    margin-left: 100px;
 }
 
 .img-grande{
@@ -88,6 +117,16 @@ scroll-container {
     display: flex;
     flex-wrap: wrap;
     padding-top:75px ;
+    padding-bottom:75px ;
+    background-color: #1d2a37;
+    color: white;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    padding-right: 0;
+    margin-right: 0;
 }
 .carrossel{
     display: flex;
@@ -117,10 +156,30 @@ scroll-container {
     margin: 5px auto;
     max-width: 300px;
 }
+
+.p-app-web{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-weight:bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: #425161;
+    padding-top: 30px;
+    padding-bottom:10px ;
+}
+.p-app-web b{
+    color:#1e69a2;
+}
+.p2-app-web{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;}
+
 .imagem1{
     width: 1000px;
     height: 500px;
-    outline: 3px solid black;
+    
     overflow: hidden;
     position: relative;
     box-shadow: 10px 10px 15px black;
@@ -133,7 +192,7 @@ scroll-container {
 .imagem1 ul{
     display: flex;
     list-style: none;
-    width: 4000px ;
+    width: 5000px ;
     height: 500px;
 }
 
@@ -150,12 +209,12 @@ scroll-container {
 .imagem2{
     width: 250px;
     height: 500px;
-    outline: 3px solid black;
+    
     overflow: hidden;
     position: relative;
     box-shadow: 10px 10px 15px black;
     margin-bottom: 50px;
-    border-radius: 5px;
+    border-radius: 10px;
     display: none;
 }
 .imagem2 ul{
@@ -175,14 +234,15 @@ scroll-container {
 
 
 .imagem3{
-        width: 850px;
-        height: 500px;
-        outline: 3px solid black;
+        width: 800px;
+        max-height: 400px;
         overflow: hidden;
         position: relative;
         box-shadow: 10px 10px 15px black;
         margin-bottom: 50px;
         border-radius: 5px;
+        display: none;
+        background-color: black;
         
         
     }
@@ -190,13 +250,13 @@ scroll-container {
 .imagem3 ul{
         display: flex;
         list-style: none;
-        width: 3200px ;
+        width: 4000px ;
         height: 500px;
     }
     
 .imagem3 ul img{
         max-width: 800px;
-        max-height: 500px;
+        min-height: 400px;
     }
     
 .imagem3 li{
@@ -215,16 +275,19 @@ scroll-container {
 @keyframes slide1 {
 
     0%{left: 0px}
-    20%{left:0px}
+    10%{left: 0px}
 
+    20%{left: -1000px}
     30%{left: -1000px}
-    40%{left: -1000px}
 
+    40%{left: -2000px}
     50%{left: -2000px}
-    60%{left: -2000px}
 
+    60%{left: -3000px}
     70%{left: -3000px}
-    80%{left: -3000px}
+
+    80%{left: -4000px}
+    90%{left: -4000px}
 
     100%{left: 0px;}
 
@@ -255,16 +318,19 @@ scroll-container {
 @keyframes slide3 {
 
     0%{left: 0px}
-    20%{left:0px}
+    10%{left: 0px}
 
+    20%{left: -800px}
     30%{left: -800px}
-    40%{left: -800px}
 
+    40%{left: -1600px}
     50%{left: -1600px}
-    60%{left: -1600px}
 
+    60%{left: -2400px}
     70%{left: -2400px}
-    80%{left: -3000px}
+
+    80%{left: -3200px;}
+    90%{left: -3200px;}
 
     100%{left: 0px;}
 
@@ -302,7 +368,7 @@ footer p{
 }
 
 
-@media (max-width:1000px){
+@media (max-width:1150px){
     
     body{
         width: 100%;
@@ -333,6 +399,8 @@ footer p{
         text-align: justify;
         margin: 0 auto;
         flex-basis: 500px;
+        height: 100%;
+        margin: 25px;
     }
 
     .containerMV{
@@ -371,15 +439,42 @@ footer p{
     .imagem3{
         display: block;
     }
+    h1{
+        margin: 0;
+    }
+    .texto-mv h2{
+        margin: 0;
+    }
+    p{
+        margin: 0;
+    }
     
 }
 
-@media (max-width:412px){
+@media (max-width:500px){
+    
     .imagem1{
         display: none;
     }
     .imagem2{
         display: block;
     }
-    
+    .imagem3{
+        display: none;
+    }
+
+    h1{
+        margin: 0;
+    }
+    .texto-mv h2{
+        margin: 0;
+    }
+    p{
+        margin: 0;
+    }
+    .flex{
+        flex-wrap: wrap;
+
+    }
+
 }
