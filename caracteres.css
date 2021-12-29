@@ -3,29 +3,122 @@
 
 main{
     padding-top:92px ;
-    
-    
     font-family: 'Montserrat', sans-serif;
     
 }
+.inicio h1{
+    font-style: normal;
+    line-height: 62px;
+    font-size: 48px;
+    color: #cbccd1;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 200px;
+
+    
+    
+}
 .inicio div{
-    background-image: url(../iForth-Sistema/app-web-formatada/1.png);
+    height: 92vh;
+    background-image: url("Imagem-f/industrial-hall-g330ac1f44_1920.jpg");
+    background-repeat: no-repeat;
+    margin-top: -25px;
+    background-size: cover;
+    background-position: center center ;
+    
 }
 h1{
     text-align: justify;
     font-weight: 400;
     font-size: 48px;
-    text-indent: 15px; 
     color: #425161;
-    margin-left: 75px;  
 }
+.container2-mp{
+    display: flex;
+    align-items: center;
+}
+.container2 svg{
+    max-width: 32px;
+    max-width: 32px;
+}
+.container2 h2{
+    margin-left: 10px ;
+}
+
+
+.svg-MQ{
+    display: flex;
+    align-items: center;
+    
+}
+.svg-MQ svg{
+    max-width: 32px;
+    max-width: 32px;
+}
+.svg-MQ svg{
+    max-width: 32px;
+    max-width: 32px;
+}
+.svg-MQ h2{
+    margin-left: 10px ;
+}
+
+.svg-MM{
+    display: flex;
+    align-items: center;
+    
+}
+.svg-MM svg{
+    max-width: 32px;
+    max-width: 32px;
+}
+.svg-MM h2{
+    margin-left: 10px ;
+}
+.svg-CD{
+    display: flex;
+    align-items: center;
+    
+}
+.svg-CD svg{
+    max-width: 32px;
+    max-height: 32px;
+}
+.svg-CD h2{
+    margin-left: 10px ;
+}
+
+
+
+#MP svg{
+    fill: #1d406e;
+}
+#MQ svg{
+    fill: #1d406e;
+}
+#MM svg{
+    fill: #1d406e;
+}
+#CD svg{
+    fill: #1d406e;
+}
+
+.img-smile{
+    display: flex;
+    align-items: center;
+}
+.img-smile img{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    
+}
+
 .texto-mv h2{
-    text-indent: 15px; 
     font-weight: 500;
     font-size: 22px;
     line-height: 36px;
     color: #37484e;
-    margin-left: 75px;
 }
 
 h2{
@@ -49,6 +142,11 @@ scroll-container {
    vertical-align: top;
    margin-left: 75px;
 
+}
+.conteudo-texto p{
+   max-width: 500px;
+    
+    
 }
 .paragrafo {
     text-align: start;
@@ -88,7 +186,6 @@ scroll-container {
 
 }
 .containerh2{
-    
     width: 100%;
     margin-left: 100px;
 }
@@ -107,11 +204,15 @@ scroll-container {
 
 }
 
-.containerh2, h2{
-    max-width: 300px;
-    margin-top: 30px;
+.containerh2 {
+    margin: 0px;
+}
+.containerh2{
+    margin-left: 75px;
+}
 
-    
+.containerMV p{
+    max-width: 300px;
 }
 .conteudo2{
     display: flex;
@@ -131,7 +232,7 @@ scroll-container {
 .carrossel{
     display: flex;
     justify-content: space-around;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 
@@ -151,6 +252,7 @@ scroll-container {
     width: 100%;
     margin: 0 auto;
     margin-top:-255px;
+    
 }
 .container2{
     margin: 5px auto;
@@ -174,26 +276,32 @@ scroll-container {
 .p2-app-web{
     text-align: center;
     width: 100%;
-    margin: 0 auto;}
+    margin: 0 auto;
+}
+.container2-mp{
+    display:flex;
+    align-items: center;
+    
+    
+}
+
+
 
 .imagem1{
     width: 1000px;
     height: 500px;
-    
     overflow: hidden;
     position: relative;
     box-shadow: 10px 10px 15px black;
     margin-bottom: 50px;
     border-radius: 5px;
-    
-    
 }
 
 .imagem1 ul{
     display: flex;
     list-style: none;
     width: 5000px ;
-    height: 500px;
+    height: 480px;
 }
 
 .imagem1 ul img{
@@ -203,7 +311,7 @@ scroll-container {
 
 .imagem1 li{
     position: relative;
-    animation: slide1 15s infinite ease-in-out;
+    animation: slide1 50s infinite ease-in-out;
    
 }
 .imagem2{
@@ -220,13 +328,13 @@ scroll-container {
 .imagem2 ul{
     display: flex;
     list-style: none;
-    width: 2880px ;
+    width: 1000px ;
     height: 500px;
 }
 
 .imagem2 ul img{
     max-width: 250px;
-    max-height: 5000px;
+    max-height: 1000px;
 }
 .imagem2 li{
     position: relative;
@@ -350,6 +458,20 @@ scroll-container {
 .contato li a{
     color: black;
 }
+.contato ul, li,a,img{  
+    display: flex;
+    vertical-align: center;
+    margin: 0 auto;
+    align-items:center;
+}
+.contato a, img{
+    justify-content: center;
+    text-align: center;
+}
+.contato img{
+    width: 25x;
+    height: 25px;
+}
        
 footer{
  display: flex;
@@ -405,8 +527,10 @@ footer p{
 
     .containerMV{
         width: 100%;
+       
         
     }
+
     .containerh2{
         display: flex;
         margin: 0 auto;
@@ -429,6 +553,18 @@ footer p{
     .img-computador{
        margin-top: 1px;
        align-items: center ;
+    }
+    .conteudo-texto{
+        max-width: 500px;
+        
+        
+    }
+    .paragrafo {
+        text-align: start;
+        font-size: 15px;
+        line-height: 28px;
+        width: 100%;
+        
     }
     .imagem1{
         display: none;
@@ -475,6 +611,54 @@ footer p{
     .flex{
         flex-wrap: wrap;
 
+    }
+    .conteudo-texto {
+        text-align: justify;
+        box-sizing: border-box;
+        max-width: 400px;
+        margin: 25px;
+    }
+
+    h1{
+        text-align: justify;
+        font-weight: 400;
+        font-size: 48px;
+        color: #425161;
+        margin-left: 15px;  
+        
+        
+    }
+    .img-smile{
+        display: flex;
+        align-items: center;
+        vertical-align: center;
+        margin-left: 30px;
+    }
+    .img-smile img{
+        max-width: 50px;
+        max-height: 50px;
+    }
+    .texto-mv{
+        max-width: 150px;
+    }
+
+    #visao svg{
+        margin-top: -10px;
+    }
+    .texto-mv{
+        margin-bottom: 30px;
+    }
+    #visao h2{
+        margin-top: -10px;
+    }
+    .containerh2{
+        display: flex;
+        vertical-align: center;
+        margin-left: 30px ;
+        }
+    .conteudo-p svg{
+        margin-left: 25px ;
+        margin-bottom: -20px;
     }
 
 }
