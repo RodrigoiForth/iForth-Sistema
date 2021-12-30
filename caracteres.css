@@ -46,6 +46,7 @@ h1{
 }
 
 
+
 .svg-MQ{
     display: flex;
     align-items: center;
@@ -88,8 +89,6 @@ h1{
     margin-left: 10px ;
 }
 
-
-
 #MP svg{
     fill: #1d406e;
 }
@@ -114,12 +113,6 @@ h1{
     
 }
 
-.texto-mv h2{
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 36px;
-    color: #37484e;
-}
 
 h2{
     font-weight: 500;
@@ -134,20 +127,54 @@ scroll-container {
     overflow-y: scroll;
     scroll-behavior: smooth;
   }
-
-
+#sobre{
+    background-size:cover;
+}
 .conteudo-p{
-    
-   display: flex;
-   vertical-align: top;
-   margin-left: 75px;
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: start;
+    margin-left: 5%;
+    margin-top: 3%;
 
 }
+.conteudo-p p{
+    max-width: 400px;
+}
+
+.containerh2{
+    display: flex;
+    margin-left: 5% ;
+    margin-top: -3%;
+    align-items: center;
+}
+
+.texto-mv h2, p{
+    width: 100%;
+}
+.texto-mv{
+    max-width: 300px;
+    max-height: 180px;
+}
+
+
+.img-computador{
+    width: 650px;
+    max-height: 500px;
+    margin: 0 auto;
+}
+.conteudo-p img{
+    width: 100%;
+}
+
 .conteudo-texto p{
-   max-width: 500px;
+   max-width: 400px;
     
     
 }
+
 .paragrafo {
     text-align: start;
     font-size: 15px;
@@ -155,12 +182,10 @@ scroll-container {
     max-width: 500px;
     
 }
-
-
-
-.flex{
-    display: flex;
+.flex-mv{
+    display: inline-block;
 }
+
 
 .container2 p{
     font-size: 14px;
@@ -170,25 +195,11 @@ scroll-container {
     color: #90a1b3;
     
 }
-
-.containerMV{
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 15px;
-    line-height: 28px;
-    justify-content: space-between;
-    width: 100%;
-    
-    
-   
-    
-
-}
 .containerh2{
-    width: 100%;
-    margin-left: 100px;
+    padding-bottom: 3%;
 }
+
+
 
 .img-grande{
     width: 400px;
@@ -199,21 +210,9 @@ scroll-container {
 .img-pequena{
     display: none;
 }
-.img-computador-text{
-    display: flex;
 
-}
 
-.containerh2 {
-    margin: 0px;
-}
-.containerh2{
-    margin-left: 75px;
-}
 
-.containerMV p{
-    max-width: 300px;
-}
 .conteudo2{
     display: flex;
     flex-wrap: wrap;
@@ -237,23 +236,10 @@ scroll-container {
 
 
 
-.conteudo-texto, .containerMV{
-    width: 100%;
-    margin: 0 auto;
-}
 
-.img-computador img{
-    width: 100%;
-    
-    
-    
-}
-.img-computador{
-    width: 100%;
-    margin: 0 auto;
-    margin-top:-255px;
-    
-}
+
+
+
 .container2{
     margin: 5px auto;
     max-width: 300px;
@@ -490,81 +476,37 @@ footer p{
 }
 
 
-@media (max-width:1150px){
+@media (max-width:935px){
     
-    body{
-        width: 100%;
-    }
-
-    .conteudo-p{
-        width: 100%;
-        margin: 0 auto;
-    }
-    .flex{
-        flex-wrap: wrap;       
-    }
-
     .imagem1{
         display: block;
     }
     
-    .conteudo-texto{
-        width: 100%;
-        margin:0 auto;   
-    }
-
     h1{
-        text-align: center;
         margin-top: 3%;
     }
-    .paragrafo{
-        text-align: justify;
-        margin: 0 auto;
-        flex-basis: 500px;
-        height: 100%;
-        margin: 25px;
+    
+    .conteudo-p img{
+        display: none;
     }
-
-    .containerMV{
+    .conteudo-p h2{
+       width: 100%;
+    }
+    .conteudo-p p{
+        max-width: 100%;
+    }
+    .conteudo-p{
+        width: 400px;
+        margin: 0 auto;
+    }
+    
+    .texto-mv p{
         width: 100%;
-       
-        
-    }
-
-    .containerh2{
-        display: flex;
-        margin: 0 auto;
-        justify-content: space-between;
     }
     .texto-mv{
-        width: 100%;
-        margin: 0 auto;;
-        
-    }
-    .div-texto-mw{
-        width: 100%;
-        justify-content: space-between;
-    }
-    .img-computador img{
-        width: 100%;
-        margin: 0 auto
-        
-    }
-    .img-computador{
-       margin-top: 1px;
-       align-items: center ;
-    }
-    .conteudo-texto{
-        max-width: 500px;
-        
-        
-    }
-    .paragrafo {
-        text-align: start;
-        font-size: 15px;
-        line-height: 28px;
-        width: 100%;
-        
+       width:  300px;
+       margin: 0 auto;
+       margin-top: 3%;
     }
     .imagem1{
         display: none;
@@ -574,15 +516,6 @@ footer p{
     }
     .imagem3{
         display: block;
-    }
-    h1{
-        margin: 0;
-    }
-    .texto-mv h2{
-        margin: 0;
-    }
-    p{
-        margin: 0;
     }
     
 }
@@ -602,16 +535,11 @@ footer p{
     h1{
         margin: 0;
     }
-    .texto-mv h2{
-        margin: 0;
-    }
+    
     p{
         margin: 0;
     }
-    .flex{
-        flex-wrap: wrap;
-
-    }
+    
     .conteudo-texto {
         text-align: justify;
         box-sizing: border-box;
@@ -638,16 +566,11 @@ footer p{
         max-width: 50px;
         max-height: 50px;
     }
-    .texto-mv{
-        max-width: 150px;
-    }
-
+    
     #visao svg{
         margin-top: -10px;
     }
-    .texto-mv{
-        margin-bottom: 30px;
-    }
+    
     #visao h2{
         margin-top: -10px;
     }
