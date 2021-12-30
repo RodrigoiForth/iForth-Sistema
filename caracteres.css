@@ -14,13 +14,28 @@ main{
     font-weight: 600;
     text-align: center;
     padding-top: 200px;
+    padding-bottom: 5px;
 
     
     
 }
+p{
+    text-indent: 10px;
+}
+
+h1::after{
+    content: "";
+    height: 4px;
+    width: 150px;
+    background-color: #1d406e;
+    display: block;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .inicio div{
     height: 92vh;
-    background-image: url("Imagem-f/industrial-hall-g330ac1f44_1920.jpg");
+    background-image: url("accets/smartphone-6265046_1920.jpg");
     background-repeat: no-repeat;
     margin-top: -25px;
     background-size: cover;
@@ -33,6 +48,7 @@ h1{
     font-size: 48px;
     color: #425161;
 }
+
 .container2-mp{
     display: flex;
     align-items: center;
@@ -101,6 +117,9 @@ h1{
 #CD svg{
     fill: #1d406e;
 }
+#insta svg{
+    margin-right: 5px ;
+}
 
 .img-smile{
     display: flex;
@@ -111,6 +130,10 @@ h1{
     height: 50px;
     margin: 0;
     
+}
+.conteudo2 p{
+    height: 170px;
+
 }
 
 
@@ -140,37 +163,45 @@ scroll-container {
     margin-top: 3%;
 
 }
-.conteudo-p p{
-    max-width: 400px;
-}
 
 .containerh2{
     display: flex;
     margin-left: 5% ;
     margin-top: -3%;
-    align-items: center;
+    
 }
 
 .texto-mv h2, p{
     width: 100%;
 }
 .texto-mv{
-    max-width: 300px;
+    max-width: 250px;
     max-height: 180px;
+}
+.texto-mv p{
+    font-size: 15px;
+    line-height: 28px;
+   
 }
 
 
+
+#sobre{
+    height: 95vh;
+}
 .img-computador{
-    width: 650px;
-    max-height: 500px;
+    width: 500px;
+    max-height: 400px;
     margin: 0 auto;
+    padding-top: 10px;
 }
 .conteudo-p img{
     width: 100%;
 }
 
 .conteudo-texto p{
-   max-width: 400px;
+   max-width: 600px;
+   text-align: justify;
     
     
 }
@@ -219,6 +250,7 @@ scroll-container {
     padding-top:75px ;
     padding-bottom:75px ;
     background-color: #1d2a37;
+    min-height: 100vh;
     color: white;
     vertical-align: middle;
     width: 100%;
@@ -227,6 +259,7 @@ scroll-container {
     margin-left: 0;
     padding-right: 0;
     margin-right: 0;
+    align-items: center;
 }
 .carrossel{
     display: flex;
@@ -267,7 +300,17 @@ scroll-container {
 .container2-mp{
     display:flex;
     align-items: center;
+}
+
+
+.img-computador-mobile{
+    display: none;
+    width: 600px;
+    margin: 0 auto;
     
+}
+.img-computador-mobile img{
+    width: 100%;
     
 }
 
@@ -303,7 +346,6 @@ scroll-container {
 .imagem2{
     width: 250px;
     height: 500px;
-    
     overflow: hidden;
     position: relative;
     box-shadow: 10px 10px 15px black;
@@ -430,6 +472,14 @@ scroll-container {
 
     
 }
+.contato{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
 
 .contato{
     text-align: center;
@@ -465,7 +515,7 @@ footer{
  margin: 0 auto;
  text-align: center;
  background-color: #2b3c4c ;
- 
+ color: #ffffff;
  height: 300px;
 }
 footer p{
@@ -476,37 +526,38 @@ footer p{
 }
 
 
-@media (max-width:935px){
-    
-    .imagem1{
+
+@media (max-width:1000px){
+    .img-computador-mobile{
         display: block;
     }
-    
-    h1{
-        margin-top: 3%;
-    }
-    
-    .conteudo-p img{
+    .img-computador img{
         display: none;
     }
-    .conteudo-p h2{
-       width: 100%;
+
+    .paragrafo{
+        width: 100%;
     }
-    .conteudo-p p{
-        max-width: 100%;
-    }
+
     .conteudo-p{
-        width: 400px;
+        max-width:600px;
         margin: 0 auto;
+        display: block;
     }
-    
     .texto-mv p{
         width: 100%;
     }
+    .texto-mv svg{
+        margin-top: 30%;
+    }
     .texto-mv{
-       width:  300px;
-       margin: 0 auto;
-       margin-top: 3%;
+        
+        width: 110px;
+        margin: 0 auto;
+        padding-bottom:25% ;
+    }
+    .imagem1{
+        display: block;
     }
     .imagem1{
         display: none;
@@ -532,13 +583,6 @@ footer p{
         display: none;
     }
 
-    h1{
-        margin: 0;
-    }
-    
-    p{
-        margin: 0;
-    }
     
     .conteudo-texto {
         text-align: justify;
@@ -546,42 +590,29 @@ footer p{
         max-width: 400px;
         margin: 25px;
     }
-
-    h1{
-        text-align: justify;
-        font-weight: 400;
-        font-size: 48px;
-        color: #425161;
-        margin-left: 15px;  
-        
-        
+    .conteudo-p{
+        display: block;
     }
-    .img-smile{
-        display: flex;
-        align-items: center;
-        vertical-align: center;
-        margin-left: 30px;
+    .paragrafo{
+        max-width: 400px;
     }
-    .img-smile img{
-        max-width: 50px;
-        max-height: 50px;
+    .texto-mv p{
+        width: 100%;
     }
-    
-    #visao svg{
-        margin-top: -10px;
+    .texto-mv{
+        width: 150px;
+        margin: 0 auto;
     }
-    
-    #visao h2{
-        margin-top: -10px;
-    }
-    .containerh2{
-        display: flex;
-        vertical-align: center;
-        margin-left: 30px ;
-        }
-    .conteudo-p svg{
-        margin-left: 25px ;
-        margin-bottom: -20px;
+    #sobre{
+        height: 100%;
     }
 
+    .img-computador-mobile img{
+        width: 100%;
+    }
+
+    .img-computador-mobile{
+        width: 400px;
+    }
+    
 }
