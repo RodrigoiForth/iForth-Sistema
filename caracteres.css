@@ -527,12 +527,24 @@ footer p{
 
 
 
-@media (max-width:1000px){
+@media (max-width:1050px){
     .img-computador-mobile{
         display: block;
+        width: 400px;
+        max-height: 500px;
     }
+    .img-computador-mobile img{
+        width: 100%;
+        
+    }
+
     .img-computador img{
         display: none;
+        
+    }
+
+    #projeto{
+        padding-top: 50%;
     }
 
     .paragrafo{
@@ -552,7 +564,7 @@ footer p{
     }
     .texto-mv{
         
-        width: 110px;
+        width: 200px;
         margin: 0 auto;
         padding-bottom:25% ;
     }
@@ -571,7 +583,7 @@ footer p{
     
 }
 
-@media (max-width:500px){
+@media (max-width:700px){
     
     .imagem1{
         display: none;
@@ -605,6 +617,9 @@ footer p{
     }
     #sobre{
         height: 100%;
+    }
+    #projeto{
+        padding:0% ;
     }
 
     .img-computador-mobile img{
