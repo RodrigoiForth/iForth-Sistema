@@ -6,47 +6,42 @@ main{
     font-family: 'Montserrat', sans-serif;
     
 }
-.inicio h1{
-    font-style: normal;
-    line-height: 62px;
-    font-size: 48px;
-    color: #cbccd1;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 5px;
 
-    
-    
-}
 p{
     text-indent: 10px;
+    
 }
 
-h1::after{
-    content: "";
-    height: 4px;
-    width: 150px;
-    background-color: #1d406e;
-    display: block;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+
 .inicio div{
-    height: 92vh;
+    
     background-image: url("accets/smartphone-6265046_1920.jpg");
     background-repeat: no-repeat;
-    margin-top: -25px;
+    margin-top: -50px;
     background-size: cover;
     background-position: center center ;
     
 }
+
+
 h1{
     text-align: justify;
     font-weight: 400;
     font-size: 48px;
     color: #425161;
+    
+}
+
+h1::after{
+    content: "";
+    height: 4px;
+    width: 320px;
+    background-color: #1d406e;
+    display: block;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
 }
 
 .container2-mp{
@@ -56,12 +51,12 @@ h1{
 .container2 svg{
     max-width: 32px;
     max-width: 32px;
+    
 }
 .container2 h2{
     margin-left: 10px ;
+   
 }
-
-
 
 .svg-MQ{
     display: flex;
@@ -135,8 +130,6 @@ h1{
     height: 170px;
 
 }
-
-
 h2{
     font-weight: 500;
     font-size: 24px;
@@ -166,8 +159,9 @@ scroll-container {
 
 .containerh2{
     display: flex;
-    margin-left: 5% ;
-    margin-top: -3%;
+    margin-left: 5%;
+    flex-direction: column;
+    
     
 }
 
@@ -175,8 +169,9 @@ scroll-container {
     width: 100%;
 }
 .texto-mv{
-    max-width: 250px;
-    max-height: 180px;
+   padding-top: 10px;
+   max-height: 180px;
+
 }
 .texto-mv p{
     font-size: 15px;
@@ -184,26 +179,21 @@ scroll-container {
    
 }
 
-
-
-#sobre{
-    height: 95vh;
-}
 .img-computador{
-    width: 500px;
+    width: 600px;
     max-height: 400px;
     margin: 0 auto;
-    padding-top: 10px;
+    padding-top: 65px;
+    margin-left: 5% ;
 }
 .conteudo-p img{
     width: 100%;
+    margin-right: 10%;
 }
 
 .conteudo-texto p{
    max-width: 600px;
-   text-align: justify;
-    
-    
+   text-align: justify; 
 }
 
 .paragrafo {
@@ -211,13 +201,12 @@ scroll-container {
     font-size: 15px;
     line-height: 28px;
     max-width: 500px;
+    padding-bottom: 10px;
     
 }
 .flex-mv{
     display: inline-block;
 }
-
-
 .container2 p{
     font-size: 14px;
     line-height: 26px;
@@ -250,7 +239,7 @@ scroll-container {
     padding-top:75px ;
     padding-bottom:75px ;
     background-color: #1d2a37;
-    min-height: 100vh;
+    
     color: white;
     vertical-align: middle;
     width: 100%;
@@ -266,16 +255,15 @@ scroll-container {
     justify-content: space-around;
     margin-top: 50px;
 }
-
-
-
-
-
+#projeto{
+    margin-top: 5%;
+}
 
 
 .container2{
     margin: 5px auto;
     max-width: 300px;
+
 }
 
 .p-app-web{
@@ -309,12 +297,6 @@ scroll-container {
     margin: 0 auto;
     
 }
-.img-computador-mobile img{
-    width: 100%;
-    
-}
-
-
 
 .imagem1{
     width: 1000px;
@@ -473,12 +455,9 @@ scroll-container {
     
 }
 .contato{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-
 }
 
 .contato{
@@ -527,50 +506,76 @@ footer p{
 
 
 
+@media  (min-width:1050px){
+    #inicio{
+        height: 100vh;
+    }
+    #inicio div{
+        height: 100vh;
+    }
+    
+    #sobre{
+        height: 100vh;
+    }
+    #projeto{
+        height: 100vh;
+    }
+    #carrossel{
+        padding-top: 10%;
+        height: 100vh;
+    }
+    #contato{
+        height: 100vh;
+    }
+}
+    
+
 @media (max-width:1050px){
-    .img-computador-mobile{
-        display: block;
-        width: 400px;
-        max-height: 500px;
+    
+    #inicio div{
+        height: 500px;
+    }
+
+    *{
+        padding: 0;
+        margin: 0;
+
+    }
+    .img-computador{
+        display: none;
     }
     .img-computador-mobile img{
         width: 100%;
+        padding-top: 3%;
         
     }
-
-    .img-computador img{
-        display: none;
+    .img-computador-mobile{
+        display: block;
+        width: 700px;
+        margin: 0 auto;
         
     }
-
-    #projeto{
-        padding-top: 50%;
-    }
-
-    .paragrafo{
+    .paragrafo p{
         width: 100%;
+        
     }
-
+    .paragrafo{
+        width:500px;
+    }
     .conteudo-p{
-        max-width:600px;
+        max-width:400px;
         margin: 0 auto;
         display: block;
     }
     .texto-mv p{
         width: 100%;
     }
-    .texto-mv svg{
-        margin-top: 30%;
-    }
+    
     .texto-mv{
-        
-        width: 200px;
+        width: 300px;
         margin: 0 auto;
-        padding-bottom:25% ;
     }
-    .imagem1{
-        display: block;
-    }
+    
     .imagem1{
         display: none;
     }
@@ -580,6 +585,62 @@ footer p{
     .imagem3{
         display: block;
     }
+    .contato{
+        height: 100vh;
+    }
+    
+    
+}
+@media (max-width:800px){
+   
+    .imagem1{
+        display: none;
+    }
+    .imagem2{
+        display: block;
+    }
+    .imagem3{
+        display: none;
+    }
+    .conteudo-texto {
+        text-align: justify;
+        box-sizing: border-box;
+        max-width: 400px;
+        margin: 25px;
+    }
+    .conteudo-p{
+        display: block;
+    }
+    .paragrafo{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .texto-mv p{
+        width: 100%;
+    }
+    .texto-mv{
+        width: 250px;
+        margin: 0 auto;
+    }
+    #sobre{
+        height: 100%;
+    }
+    #projeto{
+        padding:0% ;
+    }
+
+    .img-computador-mobile img{
+        width: 100%;
+    }
+
+    .img-computador-mobile{
+        max-width: 350px;
+        padding-top: 15%;
+    }
+    .texto-mv{
+        padding-top: 40px;
+       
+     }
     
 }
 
@@ -612,22 +673,24 @@ footer p{
         width: 100%;
     }
     .texto-mv{
-        width: 150px;
+        width: 250px;
         margin: 0 auto;
     }
-    #sobre{
-        height: 100%;
-    }
-    #projeto{
-        padding:0% ;
-    }
+    
 
     .img-computador-mobile img{
         width: 100%;
+
     }
 
     .img-computador-mobile{
         width: 400px;
     }
+    .texto-mv{
+        padding-top: 40px;
+        
+     
+     }
     
 }
+
