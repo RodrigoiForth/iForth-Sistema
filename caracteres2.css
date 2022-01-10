@@ -202,22 +202,25 @@ scroll-container {
     line-height: 28px;
     max-width: 500px;
     padding-bottom: 10px;
+    
 }
 .flex-mv{
     display: inline-block;
 }
-
 .container2 p{
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
     font-style: normal;
     color: #90a1b3;
+    
 }
-
 .containerh2{
     padding-bottom: 3%;
 }
+
+
+
 .img-grande{
     width: 400px;
     height: 600px;
