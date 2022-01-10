@@ -58,6 +58,7 @@ h1::after{
    
 }
 
+
 .svg-MQ{
     display: flex;
     align-items: center;
@@ -144,7 +145,7 @@ scroll-container {
     scroll-behavior: smooth;
   }
 #sobre{
-    background-size:cover;
+    background-size:cover;  
 }
 .conteudo-p{
     display: flex;
@@ -198,21 +199,17 @@ scroll-container {
     margin-right: 10%;
 }
 
-.conteudo-texto p{
-   max-width: 600px;
-   text-align: justify; 
-}
+
 
 .paragrafo {
     text-align: start;
     font-size: 15px;
     line-height: 28px;
-    max-width: 500px;
     padding-bottom: 10px;
+    max-width: 75vw;
 }
-.flex-mv{
-    display: inline-block;
-}
+
+
 
 .container2 p{
     font-size: 14px;
@@ -534,6 +531,28 @@ footer p{
     #contato{
         height: 100vh;
     }
+    .flex-mv{
+        display: flex;
+        justify-content: space-around;
+        max-width: 75vw;
+        height: 100%;
+        margin: auto 0;
+    }
+    .paragrafo {
+        text-align: start;
+        font-size: 15px;
+        line-height: 28px;
+        padding-bottom: 10px;
+        max-width: 75vw;
+    }
+    .conteudo-p{
+        align-items: center;
+        vertical-align: middle;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    
+    
 }
     
 
@@ -583,15 +602,6 @@ footer p{
 }
 @media (max-width:800px){
    
-    .imagem1{
-        display: none;
-    }
-    .imagem2{
-        display: block;
-    }
-    .imagem3{
-        display: none;
-    }
     .conteudo-texto {
         text-align: justify;
         box-sizing: border-box;
@@ -619,15 +629,6 @@ footer p{
         padding:0% ;
         
     }
-
-    .img-computador-mobile img{
-        width: 100%;
-    }
-
-    .img-computador-mobile{
-        max-width: 350px;
-        padding-top: 15%;
-    }
     .texto-mv{
         padding-top: 40px;
        
@@ -637,15 +638,6 @@ footer p{
 
 @media (max-width:700px){
     
-    .imagem1{
-        display: none;
-    }
-    .imagem2{
-        display: block;
-    }
-    .imagem3{
-        display: none;
-    }
 
     
     .conteudo-texto {
@@ -668,15 +660,6 @@ footer p{
         margin: 0 auto;
     }
     
-
-    .img-computador-mobile img{
-        width: 100%;
-
-    }
-
-    .img-computador-mobile{
-        width: 400px;
-    }
     .texto-mv{
         padding-top: 40px;
         
@@ -715,7 +698,7 @@ footer p{
     }
     .texto-mv{
         width: 250px;
-        margin: 0 auto;
+        margin-left:25px ;
     }
     
 
@@ -732,6 +715,10 @@ footer p{
         
      
      }
+    
+     
+
+
     
 }
 
