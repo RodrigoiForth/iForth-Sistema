@@ -153,7 +153,8 @@ scroll-container {
     justify-content: space-around;
     align-items: start;
     margin-left: 5%;
-    margin-top: 3%;
+    margin-top: 100px;
+    padding-top: 20px;
 
 }
 
@@ -178,13 +179,19 @@ scroll-container {
     line-height: 28px;
    
 }
-
-.img-computador{
-    width: 600px;
-    max-height: 400px;
+.computadorgrande img{
+    width: 100%;
+    display: block;
+}
+.computadorgrande {
+    max-width: 600px;
+    max-height: 600px;
     margin: 0 auto;
-    padding-top: 65px;
-    margin-left: 5% ;
+    
+}
+
+.p2-app-web {
+    padding-bottom: 30px;
 }
 .conteudo-p img{
     width: 100%;
@@ -254,6 +261,8 @@ scroll-container {
 }
 #projeto{
     margin-top: 5%;
+   
+    
 }
 
 
@@ -296,6 +305,7 @@ scroll-container {
 }
 
 .imagem1{
+    display: none;
     width: 1000px;
     height: 500px;
     overflow: hidden;
@@ -323,6 +333,7 @@ scroll-container {
    
 }
 .imagem2{
+    display: none;
     width: 250px;
     height: 500px;
     overflow: hidden;
@@ -349,6 +360,7 @@ scroll-container {
 
 
 .imagem3{
+        display: none;
         width: 800px;
         max-height: 400px;
         overflow: hidden;
@@ -563,6 +575,7 @@ footer p{
         max-width:400px;
         margin: 0 auto;
         display: block;
+        margin-top: 100px ;
     }
     .texto-mv p{
         width: 100%;
@@ -624,6 +637,7 @@ footer p{
     }
     #projeto{
         padding:0% ;
+        
     }
 
     .img-computador-mobile img{

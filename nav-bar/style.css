@@ -39,11 +39,21 @@ main {
 .nav-list {
   list-style: none;
   display: flex;
+
+  
 }
 
 .nav-list li {
   letter-spacing: 3px;
   margin-left: 32px;
+  border-radius: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.nav-list li:hover{
+  transition-duration: 2s;
+  background-color: #3b388dec;
 }
 
 .mobile-menu {
