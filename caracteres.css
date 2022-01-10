@@ -691,3 +691,54 @@ footer p{
     
 }
 
+@media (max-width:700px){
+    
+    .imagem1{
+        display: none;
+    }
+    .imagem2{
+        display: block;
+    }
+    .imagem3{
+        display: none;
+    }
+
+    
+    .conteudo-texto {
+        text-align: justify;
+        box-sizing: border-box;
+        max-width: 400px;
+        margin: 25px;
+    }
+    .conteudo-p{
+        display: block;
+    }
+    .paragrafo{
+        max-width: 400px;
+    }
+    .texto-mv p{
+        width: 100%;
+    }
+    .texto-mv{
+        width: 250px;
+        margin: 0 auto;
+    }
+    
+
+    .img-computador-mobile img{
+        width: 100%;
+
+    }
+
+    .img-computador-mobile{
+        width: 400px;
+    }
+    .texto-mv{
+        padding-top: 40px;
+        
+     
+     }
+    
+}
+
+
