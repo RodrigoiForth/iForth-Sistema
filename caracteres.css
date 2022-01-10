@@ -21,6 +21,7 @@ p{
     background-size: cover;
     background-position: center center ;
     
+    
 }
 
 
@@ -44,6 +45,54 @@ h1::after{
     
 }
 
+.texto-img h4 ul{
+    position: absolute;
+}
+#inicio h4{
+    padding-top: 300px ;
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 62px;
+    color: whitesmoke;
+    max-width: 600px;
+    margin-left: 30px;
+    
+}
+#inicio ul {
+    max-width: 300px;  
+    margin-left: 30px;
+    list-style: none;
+    text-decoration: none;
+}
+#inicio ul li{
+    border: solid 1px;
+    max-width: 300px;
+    font-family: 'Montserrat', sans-serif  ;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    height: 50px;
+    list-style: none;
+    text-decoration: none;
+
+    
+}
+#inicio ul li:hover{
+    background-color: black;
+    transition-duration:2s ;
+    list-style: none;
+    text-decoration: none;
+    
+}
+#inicio a:hover{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
 .container2-mp{
     display: flex;
     align-items: center;
