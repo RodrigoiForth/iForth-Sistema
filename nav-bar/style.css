@@ -52,7 +52,7 @@ main {
   padding-right: 5px;
 }
 .nav-list li:hover{
-  transition-duration: 2s;
+  transition-duration: 1s;
   background-color: #3b388dec;
 }
 
