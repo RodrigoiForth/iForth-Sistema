@@ -15,7 +15,7 @@ p{
 
 .inicio div{
     
-    background-image: url("accets/smartphone-6265046_1920.jpg");
+    background-image: url("accets/Imagem-background.jpeg");
     background-repeat: no-repeat;
     margin-top: -50px;
     background-size: cover;
@@ -240,8 +240,6 @@ scroll-container {
 .conteudo2{
     display: flex;
     flex-wrap: wrap;
-    padding-top:75px ;
-    padding-bottom:75px ;
     background-color: #1d2a37;
     
     color: white;
@@ -503,7 +501,7 @@ footer{
  margin: 0 auto;
  text-align: center;
  background-color: #2b3c4c ;
- color: #ffffff;
+ color: #72879a;
  height: 300px;
 }
 footer p{

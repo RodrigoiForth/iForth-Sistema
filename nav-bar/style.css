@@ -30,6 +30,9 @@ nav {
   position:fixed;
   z-index: 1;
 }
+ul{
+  margin-right: 136.5px;
+}
 
 main {
   background: url("bg.jpg") no-repeat center center;
