@@ -29,9 +29,14 @@ nav {
   width: 100%;
   position:fixed;
   z-index: 1;
+ 
 }
 ul{
   margin-right: 136.5px;
+  
+}
+img{
+  margin-left: 136.5px;
 }
 
 main {
@@ -123,4 +128,10 @@ main {
 
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
+}
+@media (max-width:999px){
+  ul {
+    margin: 0px;
+    transition-duration: 0;
+  }
 }

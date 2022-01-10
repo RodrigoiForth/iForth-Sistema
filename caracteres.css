@@ -537,7 +537,7 @@ footer p{
 }
     
 
-@media (max-width:1050px){
+@media (max-width:1000px){
     
     #inicio div{
         height: 500px;
@@ -548,20 +548,10 @@ footer p{
         margin: 0;
 
     }
-    .img-computador{
-        display: none;
-    }
-    .img-computador-mobile img{
-        width: 100%;
-        padding-top: 3%;
-        
-    }
-    .img-computador-mobile{
-        display: block;
-        width: 700px;
-        margin: 0 auto;
-        
-    }
+    .nav
+    
+    
+    
     .paragrafo p{
         width: 100%;
         
@@ -584,15 +574,7 @@ footer p{
         margin: 0 auto;
     }
     
-    .imagem1{
-        display: none;
-    }
-    .imagem2{
-        display: none;
-    }
-    .imagem3{
-        display: block;
-    }
+    
     .contato{
         height: 100vh;
     }
