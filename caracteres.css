@@ -78,21 +78,27 @@ h1::after{
     height: 50px;
     list-style: none;
     text-decoration: none;
-
-    
+    cursor: pointer;
 }
 #inicio ul li:hover{
     background-color: black;
     transition-duration:2s ;
     list-style: none;
     text-decoration: none;
-    
+    list-style: none;
+    text-decoration: none;
+    height: 52px;
 }
 #inicio a:hover{
     color: white;
     list-style: none;
     text-decoration: none;
 }
+#inicio a{
+    list-style: none;
+    text-decoration: none;
+}
+
 .container2-mp{
     display: flex;
     align-items: center;
